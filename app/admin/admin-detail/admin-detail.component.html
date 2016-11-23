@@ -1,0 +1,30 @@
+
+  <div class="panel panel-default">
+  
+    <div class="panel-heading" *ngIf="selectedUser == null"><h4 class="panel-title">User Activity</h4></div> 
+    <div class="panel-heading" *ngIf="selectedUser != null"><h4 class="panel-title">User Activity &nbsp;&nbsp; {{selectedUser.metrics.length}} of {{selectedUser.totalCount}}</h4></div>
+  
+    <div class="panel-body">
+  
+  <div *ngIf="selectedUser != null">
+  
+  <p>{{selectedUser.email}}</p>
+
+  <table class="table table-striped">
+    <thead>
+      <th>Metric</th>
+      <th>Date</th>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let row of selectedUser.metrics" >
+        <td>{{row.key}}</td>
+        <td>{{row.date | date:'MM/dd/yyyy HH:mm:ss'}}</td>        
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+    </div>
+  </div>
+

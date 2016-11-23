@@ -1,0 +1,55 @@
+      <div class="row">
+        <div class="col-md-12">
+            <session-list (sessionSelectedEvent)="sessionSelectedEvent($event)"></session-list>
+            <hr>          
+        </div>
+      </div>
+
+      <div class="row" [ngSwitch]="IsLoggedIn">
+
+      <template  ngSwitchCase="no">
+        <div class="col-md-4">
+            <p>Please log in above see you driving history.</p>
+        </div>
+      </template>
+
+      <template ngSwitchDefault>
+        <div class="col-md-4">
+            <table class="table" *ngIf="sessionInfo">
+              <tbody>
+                <tr>
+                  <td>Start Time</td>
+                  <td> {{sessionInfo.getStartDate()}} </td>
+                </tr>
+
+                <tr>
+                  <td>End Time</td>
+                  <td> {{sessionInfo.getEndDate()}} </td>
+                </tr>
+
+                <tr>
+                  <td>OBDII Records</td>
+                  <td> {{sessionInfo.getRecordCount()}} </td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+
+        <div class="col-md-8"  *ngIf="sessionInfo">
+                <table class="table  table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Request</th>
+                      <th>Response</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let v of sessionInfo.getRequestResponses()">
+                      <td><pre>{{v.getRequest()}}</pre></td>
+                      <td><pre>{{v.getResponse()}}</pre></td>
+                    </tr>
+                  </tbody>
+                </table>
+        </div>
+      </template>
+      </div>

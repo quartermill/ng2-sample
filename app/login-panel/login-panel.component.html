@@ -1,0 +1,47 @@
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" routerLink="/product" routerLinkActive="active">Products</a>
+          <a class="navbar-brand" routerLink="/contact" routerLinkActive="active">Contact</a>          
+          <a class="navbar-brand" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>          
+        </div>
+
+        <div [ngSwitch]="IsLoggedIn" id="navbar" class="navbar-collapse collapse">
+          
+          <template ngSwitchCase="no">
+            <form class="navbar-form navbar-right"  #form="ngForm" (ngSubmit)="logIn(form.value)" 
+                name="loginForm">
+              <div class="form-group">
+                <input type="text" placeholder="Email" class="form-control" name="email" ngModel>
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="Password" class="form-control" name="password" ngModel>
+              </div>
+              <button type="submit" class="btn btn-success">Sign in</button>
+            </form>
+          </template>
+
+          <template ngSwitchDefault>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{UserName}} <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a routerLink="/profile" routerLinkActive="active">Profile</a></li>
+                  <li><a href="javascript:empty();" (click)="logOut()" routerLink="/product" routerLinkActive="active">Log Out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </template>
+        </div>
+      </div>
+  </nav>
+
+
+<!-- failed login dialog -->
+<login-error></login-error>

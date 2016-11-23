@@ -1,0 +1,19 @@
+<div class="row" *ngIf="links == null">
+	<div class="col-md-4">
+		loading dashboard links...
+	</div>
+</div>
+
+<div class="row" *ngIf="links != null">
+	<div class="col-md-4">
+		<div class="panel panel-default">
+  			<div class="panel-heading"><h4 class="panel-title"> Products </h4></div>
+  			<div class="panel-body">
+  				<p *ngFor="let link of links">
+					<a routerLink="{{link.link}}" routerLinkActive="active">{{link.description}}</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+	

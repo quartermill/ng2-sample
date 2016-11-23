@@ -1,0 +1,53 @@
+<div class="panel panel-default">
+
+  <div class="panel-heading" *ngIf="responseError"><h4 class="panel-title"> Results </h4></div>
+  <div class="panel-heading" *ngIf="!responseError">
+    <h4 class="panel-title"> Results : {{pagehits}} of {{hits}} </h4>
+    <nav aria-label="Stock navigation" *ngIf="pagehits > 0">
+      <ul class="pagination">
+        <li class="{{leftDisabled}}">
+          <a href="javascript:empty();" aria-label="Previous" (click)="previousClick()">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="{{active[0]}}"><a href="javascript:empty();" (click)="indexClick(0)">{{realIndex}}</a></li>
+        <li class="{{active[1]}}"><a href="javascript:empty();" (click)="indexClick(1)">{{realIndex+1}}</a></li>
+        <li class="{{active[2]}}"><a href="javascript:empty();" (click)="indexClick(2)">{{realIndex+2}}</a></li>
+        <li class="{{active[3]}}"><a href="javascript:empty();" (click)="indexClick(3)">{{realIndex+3}}</a></li>
+        <li class="{{active[4]}}"><a href="javascript:empty();" (click)="indexClick(4)">{{realIndex+4}}</a></li>
+        <li class="{{rightDisabled}}">
+          <a href="javascript:empty();" aria-label="Next"  (click)="nextClick()">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+<div *ngIf="responseError"
+     class="alert alert-danger">
+    <div>
+      {{errorMessage}}
+    </div>
+</div>  
+
+  <div class="panel-body">
+
+  <table *ngIf="!responseError" class="table table-striped">
+    <thead>
+    	<th>Symbol</th>
+    	<th>Name</th>
+    	<th>Close</th>
+    </thead>
+
+    <tbody>
+    	<tr *ngFor="let stk of stocks" (click)="rowClick(stk.symbol)">
+    		<td>{{stk.symbol}}</td>
+    		<td>{{stk.name}}</td>
+    		<td class="text-right" >{{stk.close.toFixed(2)}}</td>
+    	</tr>
+    </tbody>
+  </table>
+  </div>
+</div>

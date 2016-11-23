@@ -1,0 +1,14 @@
+    <div class="input-group">
+      <input disabled type="text" class="form-control" placeholder="Named filter... (soon)" aria-label="...">
+      <div class="input-group-btn">
+        <button disabled type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Select <span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li><a href="javascript:empty();">One Name</a></li>
+          <li><a href="javascript:empty();">Other Name</a></li>
+          <li><a href="javascript:empty();">And a third</a></li>
+        </ul>
+
+         <button disabled class="btn btn-default" type="button">Save</button>
+         <button class="btn btn-default" type="button" (click)="filterClick()">Filter</button>  
+        </div>
+    </div>

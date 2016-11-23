@@ -1,0 +1,108 @@
+
+<form  #form="ngForm" name="criteriaForm">
+
+<div class="col-sm-4">
+
+<div class="panel panel-default">
+
+  <div class="panel-heading"><h4 class="panel-title"> Stock Criteria </h4></div>
+  <div class="panel-body">
+
+<div class="input-group">
+  <span class="input-group-addon crit-group-addon">Price Above $</span>
+  <input [(ngModel)]="priceAbove" id="priceAbove" name="priceAbove" type="number" class="form-control" placeholder="0.00" #pa="ngModel" 
+         required aria-label="Price Above" (keyup.enter)="filterClick()">
+</div>
+<div *ngIf="pa.value != null && pa.value < 0 && (pa.errors || pa.dirty || pa.touched)"
+     class="alert alert-danger">
+    <div>
+      Price Above must be at least 0
+    </div>
+</div>         
+<br>
+
+<div class="input-group">
+  <span class="input-group-addon crit-group-addon">Price Below $</span>
+  <input [(ngModel)]="priceBelow" name="priceBelow" type="number" class="form-control" placeholder="10,000.00"
+  		#pb="ngModel"  aria-label="Price Below" (keyup.enter)="filterClick()">
+</div>
+<div *ngIf="pb.value != null && pb.value < 0 && (pb.errors || pb.dirty || pb.touched)"
+     class="alert alert-danger">
+    <div>
+      Price Below must be at least 0
+    </div>
+</div> 
+<br>
+
+<div class="input-group">
+  <span class="input-group-addon crit-group-addon">Price Within %</span>
+  <input [(ngModel)]="yearlyHigh" name="yearlyHigh" type="number" class="form-control" placeholder="5%"
+      #pc="ngModel"  aria-label="Price Near Weekly High" (keyup.enter)="filterClick()">
+  <span class="input-group-addon crit-group-addon">of 52 week high</span>
+</div>
+<div *ngIf="pc.value != null && pc.value < 0 && (pc.errors || pc.dirty || pc.touched)"
+     class="alert alert-danger">
+    <div>
+      Tolerance between 1 and 99%
+    </div>
+</div> 
+<br>
+
+<div class="input-group">
+  <span class="input-group-addon crit-group-addon">Price Within %</span>
+  <input [(ngModel)]="yearlyLow" name="yearlyLow" type="number" class="form-control" placeholder="5%"
+      #pd="ngModel"  aria-label="Price Near Weekly Low" (keyup.enter)="filterClick()">
+  <span class="input-group-addon crit-group-addon">of 52 week low&nbsp;</span>
+</div>
+<div *ngIf="pd.value != null && pd.value < 0 && (pd.errors || pd.dirty || pd.touched)"
+     class="alert alert-danger">
+    <div>
+      Tolerance between 1 and 99%
+    </div>
+</div> 
+<br>
+
+<div class="input-group">
+  <span class="input-group-addon crit-group-addon">Vol Above %</span>
+  <input [(ngModel)]="historicVolatility" id="historicVolatility" name="historicVolatility" type="number" class="form-control" placeholder="10%" #pf="ngModel" 
+         required aria-label="Volatility Above" (keyup.enter)="filterClick()">
+</div>
+<div *ngIf="pf.value != null && pf.value <= 0 && (pa.errors || pa.dirty || pa.touched)"
+     class="alert alert-danger">
+    <div>
+      Historic Volatility Test must be above 0
+    </div>
+</div>         
+<br>
+
+<div class="input-group">
+  <span class="input-group-addon crit-group-addon">Listed After</span>
+  <input [(ngModel)]="listedAfter" name="listedAfter" type="date" class="form-control" placeholder="mm/dd/yyyy"
+      #pe="ngModel"  aria-label="Date Listed After" (keyup.enter)="filterClick()">
+</div>
+<div *ngIf="pe.value != null && (pe.errors && (pe.dirty || pe.touched))"
+     class="alert alert-danger">
+    <div>
+      Enter a valid date
+    </div>
+</div> 
+
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="panel panel-default">
+<div class="panel-heading"><h4 class="panel-title"> Option Criteria </h4></div>
+<div class="panel-body">
+  <div class="input-group">
+    <span class="input-group-addon">
+      <input [(ngModel)]="optionable" name="optionable" type="checkbox" aria-label="Optionable stocks only">
+    </span>
+    <input type="text" readonly value="Only include optionable stocks." class="form-control" aria-label="...">
+  </div><!-- /input-group -->
+</div>
+</div>
+</div>
+
+</form>

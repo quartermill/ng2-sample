@@ -1,0 +1,30 @@
+
+  <div class="panel panel-default">
+    <div class="panel-heading"><h4 class="panel-title">User Metric Summary</h4></div>
+    <div class="panel-body">
+  
+  <table *ngIf="summary != null" class="table table-striped">
+    <thead>
+      <th>Email</th>
+      <th>Last</th>
+      <th>Logins</th>
+      <th>Filters</th>
+      <th>Obdii Read</th>
+      <th>Obdii Writes</th>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let row of summary.rows" (click)="rowClick(row.email)" >
+        <td>{{row.email}}</td>
+        <td>{{row.lastActivity | date:'MM/dd/yyyy HH:mm:ss'}}</td>
+        <td class="text-center">{{row.get('Login')}}</td>  
+        <td class="text-center" >{{row.get('Filter')}}</td>  
+        <td class="text-center" >{{row.get('ObdiiRead')}}</td>  
+        <td class="text-center" >{{row.get('ObdiiWrite')}}</td>  
+      </tr>
+    </tbody>
+  </table>
+
+    </div>
+  </div>
+

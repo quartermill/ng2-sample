@@ -1,0 +1,7 @@
+{   
+	"server" : true,
+	"host"  : "dev.quartermillsoftware.com",
+	"url"   : "dev.quartermillsoftware.com",
+	"port"  : 3000,
+	"middleware" : ["theMiddleware"]
+}

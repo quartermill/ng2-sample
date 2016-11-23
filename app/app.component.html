@@ -1,0 +1,16 @@
+  <login-panel (loggedOnEvent)="onLoggedOn($event)" (loggedOffEvent)="onLoggedOff($event)"></login-panel>
+
+  <navigation-panel></navigation-panel>
+
+
+    <div class="container">
+    
+      <router-outlet></router-outlet>
+
+      <hr>
+      <footer>
+        <p>&copy; 2016 Quartermill Software, LLC </p>
+	      <p><img class="pull-right" src="app/images/PoweredByMacOSX.gif"></p>
+      </footer>
+    </div> <!-- /container -->
+

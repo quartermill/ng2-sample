@@ -1,0 +1,18 @@
+<div *ngIf="ErrorMessageIsVisible" class="modal fade show in danger" id="loginModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" (click)="hideErrorDialog()">&times;
+                </button>
+                <h4 class="modal-title">Unable to Sign In</h4>
+            </div>
+            <div class="modal-body">
+                <p>{{ErrorMessage}}</p>
+                 <p>There was a problem trying to log you in.  Try checking your email and password.  If the problem persists, send inqueries to <a href="mailto:aaron@quartermillsoftware.com">aaron@quartermillsoftware.com</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" (click)="hideErrorDialog()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

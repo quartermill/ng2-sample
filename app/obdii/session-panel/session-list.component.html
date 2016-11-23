@@ -1,0 +1,9 @@
+<div class="container">
+   <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">{{selectedId.getRunDate()}}
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li *ngFor="let v of sessionIds"><a href="javascript:empty();" (click)="selectSession(v)" >{{v.getRunDate()}}</a></li>
+    </ul>
+  </div>
+</div>

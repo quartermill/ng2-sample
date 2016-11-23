@@ -1,0 +1,45 @@
+
+<div class="container" *ngIf="active" >
+   <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">{{selectedDate | date:'MM/dd/yyyy'}}
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li *ngFor="let v of dates"><a href="javascript:empty();" (click)="selectDate(v.date)" >{{v.date | date:'MM/dd/yyyy'}} ({{v.type}})</a></li>
+    </ul>
+  </div>
+<br>
+  <div *ngIf="active && entries.length > 0">
+  <table class="table table-striped">
+    <thead>
+      <th class="text-center">Open Int</th>
+      <th class="text-center">Volume</th>
+      <th class="text-center">Bid</th>
+      <th class="text-center">Ask</th>
+      <th class="text-center">Last</th>
+      <th class="text-center">Strike</th>
+      <th class="text-center">Last</th>
+      <th class="text-center">Bid</th>
+      <th class="text-center">Ask</th>
+      <th class="text-center">Volume</th>
+      <th class="text-center">Open Int</th>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let row of entries" >
+        <td class="{{row.callClass}}">{{row.c_interest | number:'1.0'}}</td>
+        <td class="{{row.callClass}}">{{row.c_volume | number:'1.0'}}</td>
+        <td class="{{row.callClass}}">{{row.c_bid | number:'1.2'}}</td>  
+        <td class="{{row.callClass}}">{{row.c_ask | number:'1.2'}}</td>  
+        <td class="{{row.callClass}}">{{row.c_last | number:'1.2'}}</td>  
+        <td class="text-center strike-cell">{{row.strike | number:'1.2'}}</td>  
+        <td class="{{row.putClass}}">{{row.p_last | number:'1.2'}}</td>  
+        <td class="{{row.putClass}}">{{row.p_bid | number:'1.2'}}</td>  
+        <td class="{{row.putClass}}">{{row.p_ask | number:'1.2'}}</td>  
+        <td class="{{row.putClass}}">{{row.p_volume | number:'1.0'}}</td>
+        <td class="{{row.putClass}}">{{row.p_interest | number:'1.0'}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+</div>

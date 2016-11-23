@@ -1,0 +1,41 @@
+      <div class="row">
+         <div class="col-md-4">
+            <div class="input-group">
+               <input [(ngModel)]="symbol" id="symbol" name="symbol" type="text" class="form-control" placeholder="Symbol" aria-label="Stock Symbol Lookup" (keyup.enter)="lookupClick()">
+               <div class="input-group-btn">
+                  <button class="btn btn-default" type="button" (click)="lookupClick()">Lookup</button>  
+               </div>
+            </div>
+            <div class="bg-success" *ngIf="status == 'OK'">
+              {{loadedSymbol}} - {{name}} <br>
+              {{last | number:'1.2'}} {{lastDate | date:'MM/dd/yyyy'}}
+            </div>
+            <div class="bg-danger" *ngIf="status != 'OK' && status != ''">
+              {{status}} <br>
+            </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+         <div class="col-sm-6">
+          &nbsp;
+        </div>
+      </div>      
+
+      <div class="row">
+         <div class="col-md-*">
+            <ul class="nav nav-pills">
+              <li role="presentation" class="{{active[0]}}"><a href="javascript:empty();" (click)="selectTab('Chart');">Chart</a></li>
+              <li role="presentation" class="{{active[1]}}"><a href="javascript:empty();" (click)="selectTab('Options');">Options</a></li>
+            </ul>
+            <hr>
+
+            <chart></chart>
+            <options></options>
+ 
+        </div>
+      </div>
+
+
+

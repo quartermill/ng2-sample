@@ -1,0 +1,64 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  background-color: #f8fff8;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.navbar-inverse {
+    background-color: #003000;
+    border-color: #000;
+}
+
+/* title */
+.navbar-inverse .navbar-brand {
+    color: #fffff;
+}
+
+.jumbotron {
+    background-color: #e0f0e0;
+    padding: 0.5em 0.5em;
+}
+
+.btn-primary
+{
+	background-color: #005000;	
+}
+
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary,
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus
+{
+  background-color: #008000;
+}
+
+.crit-group-addon {
+	min-width:9em;
+}
+
+.strike-cell {
+  background-color: #14c814;  
+}
+
+.in-money {
+  background-color: #78c878;  
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color:white;
+    background-color:#208020;
+}
+
+

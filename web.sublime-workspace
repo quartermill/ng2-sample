@@ -1,0 +1,378 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"rep",
+				"replace	method"
+			],
+			[
+				"in",
+				"indexOf	method"
+			],
+			[
+				"re",
+				"replace	method"
+			],
+			[
+				"body",
+				"bodyReqs	let"
+			],
+			[
+				"Session",
+				"SessionListItem	alias"
+			],
+			[
+				"p",
+				"push	method"
+			],
+			[
+				"run",
+				"runDate	parameter"
+			],
+			[
+				"to",
+				"toPromise	property"
+			],
+			[
+				"request",
+				"RequestResponse	alias"
+			],
+			[
+				"th",
+				"thead	Tag"
+			],
+			[
+				"SessionIn",
+				"SessionInfoService	alias"
+			],
+			[
+				"String",
+				"String	interface"
+			],
+			[
+				"sess",
+				"sessionSelectedEvent	property"
+			],
+			[
+				"se",
+				"selectedId	property"
+			],
+			[
+				"sel",
+				"selectSession	method"
+			],
+			[
+				"Event",
+				"EventEmitter	alias"
+			],
+			[
+				"log",
+				"loggedOnEvent	property"
+			],
+			[
+				"lo",
+				"log	method"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1115,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "package",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/web2/app/app.component.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/web2/app/app.component.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/web2/index.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/web2/package.json",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/session-panel/request-response.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/session-panel/session-info.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/session-panel/session-list.component.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/session-panel/session-info.service.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/session-panel/session-list.service.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/session-panel/session-panel.component.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/session-panel/session-panel.component.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/app.component.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/books/index.html",
+		"/Users/aaroncox/Downloads/Other_Tools/DRM_Key_Scripts/Kindle_for_Mac_and_PC/kindlekey.pyw",
+		"/Users/aaroncox/Downloads/Other_Tools/Kobo/obok.py",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/session-panel/session-list.component.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/LoginPanel/login.service.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/session-panel/session-list-item.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/index.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/js/jquery-2.2.4.min.js",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/LoginPanel/login-credential.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/bs-config.json",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/bs-config.js",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/package.json",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/app.component.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/middle.js",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/LoginPanel/LoginPanel.component.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app.js",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/node_modules/browser-sync/index.js",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/node_modules/browser-sync/lodash.custom.js",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/LoginPanel/login-error.component.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/LoginPanel/login-error.component.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/LoginPanel/LoginPanel.component.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/app/main.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/tsconfig.json",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/typings.json",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/systemjs.config.js",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrObdii/main.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrAngObdii/app/sessionlist.component.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrAngObdii/package.json",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrAngObdii/app/boot.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrAngObdii/app/LoginPanel/LoginPanel.component.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrAngObdii/app/loginPanel/LoginPanel.component.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrAngObdii/app/sessionlist.component.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrAngObdii/app/app.component.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrAngObdii/app/app.component.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrAngObdii/index.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrAngObdii/app/loginPanel/loginPanel.component.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrAngObdii/app/css/bootstrap-override.css",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrAngBase/index.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrAngBase/app/app.component.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrAngBase/app/app.component.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrAngBase/package.json",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/QtrAngBase/app.component.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularPlaylist/app/videodetail.component.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularPlaylist/app/videodetail.component.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularPlaylist/app/app.component.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularPlaylist/app/app.component.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularPlaylist/app/videolist.component.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularPlaylist/app/videolist.component.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularPlaylist/app/config.service.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularPlaylist/app/video.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularPlaylist/index.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularPlaylist/tsconfig.json",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularPlaylist/app/app.component.js",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularPlaylist/package.json",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularBase/systemjs.config.js",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularBase/index.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularBase/app/boot.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularBase/app/app.component.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularBase/tsconfig.json",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/AngularBase/package.json",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/ang2test/index.html",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/ang2test/user.ts",
+		"/Users/aaroncox/Data/projects/business/thequartermill/web/ang2test/user.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"console.log",
+			"emailattempt",
+			"init(",
+			"http",
+			"div",
+			"isloggedin",
+			"HTTP_PROVIDERS",
+			"base",
+			"\n	",
+			"firm",
+			";\n",
+			"title",
+			"watch"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1115,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 126.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "web.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Data/projects/business/thequartermill/web/AngularPlaylist/AngularPlaylist.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 288.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
